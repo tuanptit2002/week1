@@ -58,6 +58,16 @@
         <div class="formal"><img src="../../assets/gym.png" alt=""></div>
       </div>
     </div>
+
+    <div class="dress-style-2">
+      <div class="title-style">BROWSE BY DRESS STYLE</div>
+        <div class="casual2"><img src="../../assets/carsual2.png"></div>
+        <div class="formal2"><img src="../../assets/formal2.png" alt=""></div>
+        <div class="casual2"><img src="../../assets/party2.png"></div>
+        <div class="formal2"><img src="../../assets/gym2.png" alt=""></div>
+    </div>
+
+
     <div class="customer">
         <div class="customer-title">OUR HAPPY CUSTOMERS</div>
       <div class="arrow">
@@ -186,6 +196,9 @@
   border-radius: 40px;
   background-color: #F0F0F0;
 }
+.dress-style-2{
+  display: none;
+}
 .title-style{
   margin-top: 70px;
   width: 687px;
@@ -296,6 +309,87 @@
   line-height: 22px;
   text-align: left;
   color: #00000099;
+}
+@media (max-width: 46.178em) {
+  .title-new{
+    width: 269px;
+    height: 38px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Integral CF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .products{
+    width: 100%;
+    overflow: scroll;
+    gap: 10px;
+  }
+  .product{
+    margin-left: 10px;
+  }
+
+  .line{
+    width: 100%;
+  }
+  .dress-style{
+    display: none;
+  }
+  .dress-style-2{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    gap: 0px;
+    border-radius: 20px;
+    opacity: 0px;
+    align-items: center;
+    background: #F0F0F0;
+
+  }
+  .title-style{
+    margin-top: 40px;
+    width: 246px;
+    height: 72px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Integral CF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .customer{
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+  .customer-title{
+    width: 286px;
+    height: 72px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Integral CF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+
+  }
+  .comment{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    gap: 20px;
+    margin-bottom: 150px;
+  }
+
 }
 </style>
 <script>

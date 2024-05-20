@@ -56,6 +56,25 @@
      </div>
    </div>
 
+
+   <div class="title-parameter-2">
+     <div class="brands-product">
+     <div class="parameter-brands">
+       <div class="brands-200">200+</div>
+       <div class="brand">International Brands</div>
+     </div>
+     <div class="parameter-product">
+       <div class="product-2000">2,000+</div>
+       <div class="product">High-Quality Products</div>
+     </div>
+     </div>
+     <div class="parameter-customers">
+       <div class="customer-30">30,000+</div>
+       <div class="customer">Happy Customers</div>
+     </div>
+   </div>
+    
+   <div class="image-2"><img src="../../assets/background2.png" alt=""></div>
  </div>
   <div class="title-brand">
     <div class="brands-5">
@@ -65,6 +84,18 @@
       <div><img src="../../assets/prada.png" alt=""></div>
       <div><img src="../../assets/calvin.png" alt=""></div>
     </div>
+    <div class="brands-5-2">
+      <div class="three-img">
+        <div><img src="../../assets/versace2.png" alt=""></div>
+        <div><img src="../../assets/zara2.png" alt=""></div>
+        <div><img src="../../assets/gucci2.png" alt=""></div>
+      </div>
+      <div class="two-img">
+        <div><img src="../../assets/prada2.png" alt=""></div>
+        <div><img src="../../assets/calvin2.png" alt=""></div>
+      </div>
+  </div>
+
   </div>
 </template>
 <style scoped>
@@ -211,11 +242,12 @@
   display: none;
 }
 .title{
-
   width: 100%;
   height: 663px;
   background-image: url("../../assets/backgroundheader.png");
-
+  background-size: cover;
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  background-position: center;
 }
 .title-start{
   display: flex;
@@ -391,6 +423,15 @@
   display: flex;
   justify-content: space-between;
 }
+.title-parameter-2{
+  display: none;
+}
+.brands-5-2{
+  display: none;
+}
+.image-2{
+  display: none;
+}
 @media (max-width: 46.178em) {
   .f-1{
     width: 100%;
@@ -451,7 +492,214 @@
     font-weight: 700;
     line-height: 30.24px;
     text-align: left;
+  }
+  .title{
+    width: 100%;
+    height: 853px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #F2F0F1;
+    background-image: none;
+  }
+  .title-start{
+    width: 323px;
+    height: 93px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
 
+  }
+  .title-find{
+    margin-top: 40px;
+    width: 323px;
+    height: 93px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Integral CF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    color: black;
+    box-sizing: border-box;
+    margin-left: 8px;
+  }
+  .star-big{
+    display: none;
+  }
+  .star-small{
+    width: 366px;
+    height: 50px;
+    margin-top: 30px;
+    left: 16px;
+    gap: 0px;
+  }
+  .title-browse{
+    margin-top: 25px;
+    margin-left: 8px;
+    width: 100%;
+    height: 100%;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #00000099;
+  }
+  .small{
+    display: none;
+  }
+  .title-button{
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-button button{
+    margin-top: 60px;
+    width: 358px;
+    height: 52px;
+    gap: 12px;
+    border-radius: 62px;
+    opacity: 0px;
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+
+  .title-parameter{
+    display: none;
+  }
+  .brands-product{
+    display: flex;
+    justify-content: space-between;
+    width: 278px;
+    height: 52px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .parameter-brands{
+    width: 106px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .brands-200{
+    width: 64px;
+    height: 32px;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+  }
+  .brand{
+    width: 106px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  .parameter-product{
+    width:117px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .product-2000{
+    width: 88px;
+    height: 32px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+  }
+  .product{
+    width: 117px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+  }
+  .parameter-customers{
+    width: 103px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .customer-30{
+    width: 103px;
+    height: 32px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+  }
+  .customer{
+    width: 95px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+  }
+  .title-parameter-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-2{
+    margin-top: 0px;
+    display: flex;
+  }
+  .brands-5{
+    display: none;
+  }
+  .title-brand{
+    width: 100%;
+    height: 146px;
+  }
+  .brands-5-2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    opacity: 0px;
+    align-items: center;
+
+  }
+  .three-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .two-img{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 </style>

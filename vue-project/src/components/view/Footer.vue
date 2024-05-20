@@ -65,7 +65,6 @@
        <div><img src="../../assets/bank.png" alt=""></div>
      </div>
    </div>
-
  </div>
 </template>
 <style scoped>
@@ -367,6 +366,7 @@ input:focus {
   height: 31px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .footer6-title{
   font-family: Satoshi;
@@ -376,6 +376,214 @@ input:focus {
   text-align: right;
   color:  #00000099;
   margin-top: 3px;
+}
+@media (max-width: 46.178em) {
+  .footer{
+    height: 846px;
+  }
+  .contact{
+    margin-top: -750px;
+    width: 90%;
+    height: 293px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .contact-title{
+    margin-top: 40px;
+    width: 90%;
+    height: 105px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Integral CF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+    margin-left: 0px;
+  }
+  .submit-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .message-contact{
+    width: 311px;
+    height: 42px;
+    display: flex;
+  }
+  .contact-button{
+    width: 311px;
+    height: 42px;
+  }
+  .footer2{
+    width: 100%;
+    height: 846px;
+    display: flex;
+    align-items: center;
+  }
+  .footer4{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer3{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      margin-bottom: 400px;
+  }
+  .footer5{
+
+    width: 100%;
+  }
+  .footer6{
+
+    width: 100%;
+    align-items: center;
+
+  }
+  .shop-co-title{
+    width: 144px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Integral CF;
+    font-size: 28.85px;
+    font-weight: 700;
+    line-height: 34.62px;
+    text-align: left;
+
+  }
+  .shop-title{
+    width: 357px;
+    height: 40px;
+    left: 17px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+
+  }
+  .footer-shop{
+    margin-top: 20px;
+    height: 130px;
+  }
+  .shop-co{
+    height: 75px;
+  }
+  .company{
+    width: 121px;
+    height: 146px;
+    gap: 0px;
+
+  }
+  .company-title{
+    width: 88px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+  .company-des{
+    width: 91px;
+    height: 112px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .company-des div{
+    font-size: 14px;
+  }
+  .help-title{
+    width: 44px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+  .help{
+    width: 159px;
+    height: 146px;
+  }
+  .help-des{
+    width: 121px;
+    height: 112px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+  .help-des div{
+    font-size: 14px;
+  }
+  .faq{
+    width: 121px;
+    height: 146px;
+  }
+  .faq-title{
+    width: 33px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 14px;
+  }
+  .faq-des{
+    width: 121px;
+    height: 112px;
+  }
+  .faq-des div{
+    font-size: 14px;
+  }
+  .resources{
+    width: 159px;
+    height: 146px;
+  }
+  .resources-title{
+    width: 107px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 14px;
+  }
+  .resources-des{
+    width: 159px;
+    height: 112px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .resources-des div{
+    font-size: 14px;
+  }
+  .footer6-title{
+    width: 269px;
+    height: 19px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: right;
+
+  }
 }
 </style>
 <script setup>
