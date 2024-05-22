@@ -332,13 +332,16 @@
     overflow: hidden;
   }
   .products{
-    height: 100%;
+    height: 120%;
     width: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
     gap: 10px;
   }
   .product{
     margin-left: 10px;
+  }
+  .product img{
+    height: 200px;
   }
 
   .line{
@@ -402,7 +405,7 @@
   }
   .button-view{
     width: 90%;
-    height: 15%;
+    height: 17%;
   }
 }
 </style>

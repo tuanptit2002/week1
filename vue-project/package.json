@@ -11,6 +11,7 @@
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.6",
     "@mdi/font": "^7.4.47",
+    "it": "^1.1.1",
     "vue": "^3.4.21"
   },
   "devDependencies": {
@@ -18,5 +19,9 @@
     "vite": "^5.2.8",
     "vite-plugin-vuetify": "^2.0.3",
     "vuetify": "^3.6.5"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }
