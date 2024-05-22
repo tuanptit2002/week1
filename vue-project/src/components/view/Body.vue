@@ -5,7 +5,7 @@
       <div class="product" v-for="product in products">
         <div><img src="../../assets/shirt.png" alt=""></div>
         <div class="product-name">{{product.name}}</div>
-        <div class="rating">
+        <div class="rating" >
           <v-rating
               v-model="product.rating"
               active-color="yellow-darken-2"
@@ -78,7 +78,8 @@
     <div class="comment">
       <div class="cmt" v-for="cmt in cmts">
         <div>
-          <div class="cmt-rating"><v-rating
+          <div class="cmt-rating">
+            <v-rating
               v-model="cmt.rating"
               active-color="yellow-darken-2"
               :half-increments="true"
@@ -86,7 +87,8 @@
               :length="5"
               density="compact"
               readonly
-          ></v-rating></div>
+          ></v-rating>
+          </div>
           <div class="name-check">
           <div class="cmt-name">{{cmt.name}}</div>
             <div><img src="../../assets/check.png" alt=""></div>
@@ -311,6 +313,9 @@
   color: #00000099;
 }
 @media (max-width: 46.178em) {
+  .body{
+    width: 100%;
+  }
   .title-new{
     width: 269px;
     height: 38px;
@@ -324,6 +329,10 @@
     margin-top: 60px;
   }
   .products{
+    overflow: hidden;
+  }
+  .products{
+    height: 100%;
     width: 100%;
     overflow: scroll;
     gap: 10px;
@@ -381,7 +390,9 @@
     text-align: left;
 
   }
+
   .comment{
+    height: 100%;
     width: 90%;
     display: flex;
     align-items: center;
@@ -389,7 +400,10 @@
     gap: 20px;
     margin-bottom: 150px;
   }
-
+  .button-view{
+    width: 90%;
+    height: 15%;
+  }
 }
 </style>
 <script>

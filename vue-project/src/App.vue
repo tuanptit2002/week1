@@ -8,9 +8,11 @@ export default {
 </script>
 
 <template>
+  <v-app>
   <header-app></header-app>
-  <body-app></body-app>
+  <body-app ></body-app>
   <footer-app></footer-app>
+  </v-app>
 </template>
 
 <style scoped>
