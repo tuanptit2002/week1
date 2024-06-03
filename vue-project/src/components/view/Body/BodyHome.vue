@@ -43,8 +43,8 @@
     <div class="customer">
       <div class="customer-title">OUR HAPPY CUSTOMERS</div>
       <div class="arrow">
-        <div class="arrow-left"><img src="../../assets/arrow-left.png" alt=""></div>
-        <div><img src="../../assets/arrow-right.png" alt=""></div>
+        <div class="arrow-left"><img src="../../../assets/arrow-left.png" alt=""></div>
+        <div><img src="../../../assets/arrow-right.png" alt=""></div>
       </div>
     </div>
     <div class="comment">
