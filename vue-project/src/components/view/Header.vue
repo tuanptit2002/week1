@@ -242,6 +242,10 @@
   display: none;
 }
 .title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 663px;
   background-image: url("../../assets/backgroundheader.png");
@@ -250,21 +254,21 @@
   background-position: center;
 }
 .title-start{
+  width: 1240px;
   display: flex;
-}
-.star-big{
-  margin-top: 102px;
-  margin-left: 580px;
+  justify-content: space-between;
+
+
 }
 .star-small{
+  width: 1240px;
   display: flex;
 }
 .small{
   margin-left: 106px;
 }
 .title-find{
-  margin-top: 102px;
-  margin-left: 9.4%;
+
   margin-bottom: 33px;
   width: 577px;
   height: 173px;
@@ -277,7 +281,6 @@
 
 }
 .title-browse{
-  margin-left: 9.4%;
   margin-bottom: 33px;
   width: 545px;
   height: 33px;
@@ -290,8 +293,11 @@
   text-align: left;
   color: #00000099;
 }
+.title-button{
+  width: 1240px;
+  display: flex;
+}
 .title-button button{
-  margin-left: 9.4%;
   margin-bottom: 58px;
   display: flex;
   justify-content: center;
@@ -311,8 +317,8 @@
   text-align: left;
 }
 .title-parameter{
-  margin-left: 9.4%;
-  width: 596px;
+
+  width: 1240px;
   height: 74px;
   gap: 32px;
   opacity: 0px;
@@ -552,10 +558,7 @@
   .small{
     display: none;
   }
-  .title-button{
-    display: flex;
-    justify-content: center;
-  }
+
 
   .title-button button{
     margin-top: 60px;
