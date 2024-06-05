@@ -6,7 +6,8 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-
+import store from "@/store/index.js";
+import router from "@/router.js";
 const vuetify = createVuetify({
  components,
  directives,
@@ -18,4 +19,6 @@ const vuetify = createVuetify({
  const app = createApp(App)
 app.component('fa',FontAwesomeIcon)
 app.use(vuetify);
+app.use(store);
+app.use(router);
 app.mount('#app')

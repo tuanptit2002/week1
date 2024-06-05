@@ -1,10 +1,11 @@
 <template>
   <div class="body">
+    <brands-product></brands-product>
     <div class="title-new">NEW ARRIVALS</div>
     <div class="products">
-      <div class="product" v-for="product in products">
+      <button @click="()=>{setClickDetail()}" class="product" v-for="product in products">
         <product :product = product></product>
-      </div>
+      </button>
     </div>
     <div class="button-view"><button>View All</button></div>
     <div class="line"></div>
@@ -12,9 +13,9 @@
 
     <div class="title-new">TOP SELLING</div>
     <div class="products">
-      <div class="product" v-for="product in products">
+      <button @click="setClickDetail" class="product" v-for="product in products">
         <product :product = product></product>
-      </div>
+      </button>
     </div>
     <div class="button-view"><button>View All</button></div>
 
@@ -22,7 +23,7 @@
     <div class="dress-style">
       <div class="title-style">BROWSE BY DRESS STYLE</div>
       <div class="casual-formal">
-        <div class="casual"><img src="../../../assets/carsual.png"></div>
+        <button class="casual" @click = setClickProduct><img src="../../../assets/carsual.png"></button>
         <div class="formal"><img src="../../../assets/formal.png" alt=""></div>
       </div>
       <div class="party-gym">
@@ -33,7 +34,7 @@
 
     <div class="dress-style-2">
       <div class="title-style">BROWSE BY DRESS STYLE</div>
-      <div class="casual2"><img src="../../../assets/carsual2.png"></div>
+      <button class="casual2" @click = setClickProduct><img src="../../../assets/carsual2.png"></button>
       <div class="formal2"><img src="../../../assets/formal2.png" alt=""></div>
       <div class="casual2"><img src="../../../assets/party2.png"></div>
       <div class="formal2"><img src="../../../assets/gym2.png" alt=""></div>
@@ -68,7 +69,7 @@
   height: 58px;
   gap: 0px;
   opacity: 0px;
-  font-family: Integral CF;
+  font-family: 'Integral CF', sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 57.6px;
@@ -304,8 +305,10 @@
 <script>
 import Product from "@/components/layout/product.vue";
 import CommentProduct from "@/components/layout/commentProduct.vue";
+import BrandsProduct from "@/components/view/Hearder/brandsProduct.vue";
+
 export  default {
-  components: {CommentProduct, Product},
+  components: {BrandsProduct, CommentProduct, Product},
 
   data(){
     return{
@@ -352,6 +355,20 @@ export  default {
           price:120
         }
       ]
+    }
+  },
+  methods: {
+    setClickDetail(){
+      console.log("oke")
+      this.$router.push('/detail').catch(err => {
+        console.error(err);
+      });
+    },
+    setClickProduct(){
+      this.$router.push('/products').catch(err => {
+        console.error(err);
+      });
+      console.error(this.$router);
     }
   }
 }

@@ -12,6 +12,7 @@ export default {
   <header-app></header-app>
   <body-app ></body-app>
   <footer-app></footer-app>
+
   </v-app>
 </template>
 

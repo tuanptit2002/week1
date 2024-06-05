@@ -1,15 +1,15 @@
 <template>
-<div class="f-1">
-  <div class="sign">
-    <div class="sign-1">Sign up and get 20% off to your first order. </div>
-    <div class="sign-2"> Sign Up Now</div>
+  <div class="f-1">
+    <div class="sign">
+      <div class="sign-1">Sign up and get 20% off to your first order.</div>
+      <div class="sign-2"> Sign Up Now</div>
+    </div>
+    <div></div>
   </div>
-  <div></div>
-</div>
-<div class="sidebar">
+  <div class="sidebar">
     <div class="nav">
       <div class="nav2"><img src="../../assets/nav.png" alt=""></div>
-      <div class="shop-co">SHOP.CO</div>
+      <RouterLink class="shop-co" to="/">SHOP.CO</RouterLink>
       <div class="nav-bar">
         <div class="shop">
           <div>Shop</div>
@@ -20,7 +20,9 @@
         <div class="brands">Brands</div>
       </div>
       <div class="search">
-        <div><button style="border: none"><img src="../../assets/search.png" alt=""></button></div>
+        <div>
+          <button style="border: none"><img src="../../assets/search.png" alt=""></button>
+        </div>
         <div class="search-input"><input placeholder="Search for products..."></div>
       </div>
 
@@ -30,73 +32,8 @@
         <div><img src="../../assets/user.png"></div>
       </div>
     </div>
-</div>
- <div class="title">
-   <div class="title-start">
-   <div class="title-find">FIND CLOTHES THAT MATCHES YOUR STYLE</div>
-   <div class="star-big"><img src="../../assets/startbig.png" alt=""></div>
-   </div>
-   <div class="star-small">
-   <div class="title-browse">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</div>
-   <div class="small"><img src="../../assets/startsmall.png" alt=""></div>
-   </div>
-   <div class="title-button"><button>Shop Now</button></div>
-   <div class="title-parameter">
-     <div class="parameter-brands">
-       <div class="brands-200">200+</div>
-       <div class="brand">International Brands</div>
-     </div>
-     <div class="parameter-product">
-       <div class="product-2000">2,000+</div>
-       <div class="product">High-Quality Products</div>
-     </div>
-     <div class="parameter-customers">
-       <div class="customer-30">30,000+</div>
-       <div class="customer">Happy Customers</div>
-     </div>
-   </div>
-
-
-   <div class="title-parameter-2">
-     <div class="brands-product">
-     <div class="parameter-brands">
-       <div class="brands-200">200+</div>
-       <div class="brand">International Brands</div>
-     </div>
-     <div class="parameter-product">
-       <div class="product-2000">2,000+</div>
-       <div class="product">High-Quality Products</div>
-     </div>
-     </div>
-     <div class="parameter-customers">
-       <div class="customer-30">30,000+</div>
-       <div class="customer">Happy Customers</div>
-     </div>
-   </div>
-    
-   <div class="image-2"><img src="../../assets/background2.png" alt=""></div>
- </div>
-  <div class="title-brand">
-    <div class="brands-5">
-      <div><img src="../../assets/versace.png" alt=""></div>
-      <div><img src="../../assets/zara.png" alt=""></div>
-      <div><img src="../../assets/gucci.png" alt=""></div>
-      <div><img src="../../assets/prada.png" alt=""></div>
-      <div><img src="../../assets/calvin.png" alt=""></div>
-    </div>
-    <div class="brands-5-2">
-      <div class="three-img">
-        <div><img src="../../assets/versace2.png" alt=""></div>
-        <div><img src="../../assets/zara2.png" alt=""></div>
-        <div><img src="../../assets/gucci2.png" alt=""></div>
-      </div>
-      <div class="two-img">
-        <div><img src="../../assets/prada2.png" alt=""></div>
-        <div><img src="../../assets/calvin2.png" alt=""></div>
-      </div>
   </div>
 
-  </div>
 </template>
 <style scoped>
 * {
@@ -104,7 +41,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.f-1{
+
+.f-1 {
   width: 100%;
   height: 38px;
   background-color: black;
@@ -113,7 +51,8 @@
   box-sizing: border-box;
 
 }
-.sign{
+
+.sign {
   width: 351px;
   height: 19px;
   gap: 0px;
@@ -121,21 +60,25 @@
   display: flex;
   box-sizing: border-box;
 }
-.sign div{
+
+.sign div {
   margin-top: 9px;
   font-family: 'Satoshi';
   font-size: 14px;
   line-height: 18.9px;
   color: #FFFFFF;
 }
-.sign-1{
+
+.sign-1 {
   font-weight: 400;
 }
-.sign-2{
+
+.sign-2 {
   margin-left: 2px;
   font-weight: 500;
 }
-.sidebar{
+
+.sidebar {
   width: 100%;
   height: 98px;
   background-color: #FFFFFF;
@@ -143,7 +86,8 @@
   justify-content: center;
   align-items: center;
 }
-.nav{
+
+.nav {
   width: 1240px;
   height: 48px;
   gap: 40px;
@@ -153,7 +97,9 @@
   align-items: center;
   box-sizing: border-box;
 }
-.shop-co{
+
+.shop-co {
+  text-decoration: none;
   width: 160px;
   height: 22px;
   font-family: Integral CF;
@@ -163,7 +109,8 @@
   text-align: left;
   color: black;
 }
-.nav-bar{
+
+.nav-bar {
   display: flex;
   width: 321px;
   height: 22px;
@@ -172,7 +119,8 @@
   box-sizing: border-box;
 
 }
-.nav-bar div{
+
+.nav-bar div {
   font-family: Satoshi;
   font-size: 16px;
   font-weight: 400;
@@ -180,7 +128,8 @@
   text-align: left;
 
 }
-.shop{
+
+.shop {
   display: flex;
   width: 57px;
   height: 22px;
@@ -188,28 +137,32 @@
   opacity: 0px;
   box-sizing: border-box;
 }
-.on-sale{
+
+.on-sale {
   width: 56px;
   height: 22px;
   gap: 0px;
   opacity: 0px;
   box-sizing: border-box;
 }
-.new-arrivals{
+
+.new-arrivals {
   width: 87px;
   height: 22px;
   gap: 0px;
   opacity: 0px;
 
 }
-.brands{
+
+.brands {
   width: 49px;
   height: 22px;
   gap: 0px;
   opacity: 0px;
 
 }
-.search{
+
+.search {
   width: 577px;
   height: 48px;
   padding: 12px 16px 12px 16px;
@@ -219,15 +172,17 @@
   background-color: #F0F0F0;
   display: flex;
 }
-.search input{
-  border:none;
+
+.search input {
+  border: none;
   height: 100%;
   padding: 12px 16px 12px 16px;
   width: 500px;
   background-color: #F0F0F0;
   outline: none;
 }
-.user{
+
+.user {
   display: flex;
   width: 62px;
   height: 24px;
@@ -235,13 +190,16 @@
   opacity: 0px;
 
 }
-.nav2{
+
+.nav2 {
   display: none;
 }
-.user-search{
+
+.user-search {
   display: none;
 }
-.title{
+
+.title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,21 +211,25 @@
   background-repeat: no-repeat; /* Không lặp lại ảnh */
   background-position: center;
 }
-.title-start{
+
+.title-start {
   width: 1240px;
   display: flex;
   justify-content: space-between;
 
 
 }
-.star-small{
+
+.star-small {
   width: 1240px;
   display: flex;
 }
-.small{
+
+.small {
   margin-left: 106px;
 }
-.title-find{
+
+.title-find {
 
   margin-bottom: 33px;
   width: 577px;
@@ -280,7 +242,8 @@
   color: black;
 
 }
-.title-browse{
+
+.title-browse {
   margin-bottom: 33px;
   width: 545px;
   height: 33px;
@@ -293,16 +256,18 @@
   text-align: left;
   color: #00000099;
 }
-.title-button{
+
+.title-button {
   width: 1240px;
   display: flex;
 }
-.title-button button{
+
+.title-button button {
   margin-bottom: 58px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:210px;
+  width: 210px;
   height: 52px;
   padding: 16px 54px 16px 54px;
   gap: 12px;
@@ -316,7 +281,8 @@
   line-height: 21.6px;
   text-align: left;
 }
-.title-parameter{
+
+.title-parameter {
 
   width: 1240px;
   height: 74px;
@@ -324,25 +290,29 @@
   opacity: 0px;
   display: flex;
 }
-.parameter-brands{
-  width:141px;
+
+.parameter-brands {
+  width: 141px;
   height: 74px;
   gap: 0px;
   opacity: 0px;
 }
-.parameter-product{
+
+.parameter-product {
   width: 156px;
   height: 74px;
   gap: 0px;
   opacity: 0px;
 }
-.parameter-customers{
+
+.parameter-customers {
   width: 171px;
   height: 74px;
   gap: 0px;
   opacity: 0px;
 }
-.brands-200{
+
+.brands-200 {
   width: 107px;
   height: 54px;
   gap: 0px;
@@ -354,7 +324,8 @@
   text-align: left;
   color: black;
 }
-.brand{
+
+.brand {
   width: 141px;
   height: 22px;
   gap: 0px;
@@ -364,9 +335,10 @@
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  color:  #00000099;
+  color: #00000099;
 }
-.product-2000{
+
+.product-2000 {
   width: 146px;
   height: 54px;
   gap: 0px;
@@ -378,7 +350,8 @@
   text-align: left;
   color: black;
 }
-.product{
+
+.product {
   width: 156px;
   height: 22px;
   gap: 0px;
@@ -390,7 +363,8 @@
   text-align: left;
   color: #00000099;
 }
-.customer-30{
+
+.customer-30 {
   width: 171px;
   height: 54px;
   gap: 0px;
@@ -402,7 +376,8 @@
   text-align: left;
   color: black;
 }
-.customer{
+
+.customer {
   width: 126px;
   height: 22px;
   gap: 0px;
@@ -416,7 +391,7 @@
 
 }
 
-.title-brand{
+.title-brand {
   width: 100%;
   height: 122px;
   background: black;
@@ -424,22 +399,27 @@
   justify-content: center;
   align-items: center;
 }
-.brands-5{
+
+.brands-5 {
   width: 1240px;
   display: flex;
   justify-content: space-between;
 }
-.title-parameter-2{
+
+.title-parameter-2 {
   display: none;
 }
-.brands-5-2{
+
+.brands-5-2 {
   display: none;
 }
-.image-2{
+
+.image-2 {
   display: none;
 }
+
 @media (max-width: 46.178em) {
-  .f-1{
+  .f-1 {
     width: 100%;
     height: 34px;
     background-color: black;
@@ -447,7 +427,8 @@
     justify-content: center;
     box-sizing: border-box;
   }
-  .sign{
+
+  .sign {
     width: 301px;
     height: 16px;
     gap: 0px;
@@ -455,7 +436,8 @@
     display: flex;
     box-sizing: border-box;
   }
-  .sign div{
+
+  .sign div {
     margin-top: 9px;
     font-family: 'Satoshi';
     font-size: 12px;
@@ -463,32 +445,40 @@
     color: #FFFFFF;
     box-sizing: border-box;
   }
-  .sign-1{
+
+  .sign-1 {
     font-weight: 400;
   }
-  .sign-2{
+
+  .sign-2 {
     margin-left: 2px;
     font-weight: 500;
   }
-  .nav-bar{
+
+  .nav-bar {
     display: none;
   }
-  .nav2{
+
+  .nav2 {
     display: block;
     margin-left: -80px;
   }
-  .search{
+
+  .search {
     display: none;
   }
-  .nav{
+
+  .nav {
     display: flex;
     justify-content: center;
   }
-  .user-search{
+
+  .user-search {
     margin-left: 44px;
     display: block;
   }
-  .shop-co{
+
+  .shop-co {
     margin-top: -18px;
     margin-left: -20px;
     width: 126px;
@@ -499,7 +489,8 @@
     line-height: 30.24px;
     text-align: left;
   }
-  .title{
+
+  .title {
     width: 100%;
     height: 853px;
     gap: 0px;
@@ -507,7 +498,8 @@
     background-color: #F2F0F1;
     background-image: none;
   }
-  .title-start{
+
+  .title-start {
     width: 323px;
     height: 93px;
     left: 16px;
@@ -515,7 +507,8 @@
     opacity: 0px;
 
   }
-  .title-find{
+
+  .title-find {
     margin-top: 40px;
     width: 323px;
     height: 93px;
@@ -530,17 +523,20 @@
     box-sizing: border-box;
     margin-left: 8px;
   }
-  .star-big{
+
+  .star-big {
     display: none;
   }
-  .star-small{
+
+  .star-small {
     width: 366px;
     height: 50px;
     margin-top: 30px;
     left: 16px;
     gap: 0px;
   }
-  .title-browse{
+
+  .title-browse {
     margin-top: 25px;
     margin-left: 8px;
     width: 100%;
@@ -555,12 +551,13 @@
     text-align: left;
     color: #00000099;
   }
-  .small{
+
+  .small {
     display: none;
   }
 
 
-  .title-button button{
+  .title-button button {
     margin-top: 60px;
     width: 358px;
     height: 52px;
@@ -571,10 +568,11 @@
     margin-bottom: 20px;
   }
 
-  .title-parameter{
+  .title-parameter {
     display: none;
   }
-  .brands-product{
+
+  .brands-product {
     display: flex;
     justify-content: space-between;
     width: 278px;
@@ -582,13 +580,15 @@
     gap: 0px;
     opacity: 0px;
   }
-  .parameter-brands{
+
+  .parameter-brands {
     width: 106px;
     height: 48px;
     gap: 0px;
     opacity: 0px;
   }
-  .brands-200{
+
+  .brands-200 {
     width: 64px;
     height: 32px;
     font-family: Satoshi;
@@ -597,7 +597,8 @@
     line-height: 32.4px;
     text-align: left;
   }
-  .brand{
+
+  .brand {
     width: 106px;
     height: 22px;
     gap: 0px;
@@ -608,13 +609,15 @@
     line-height: 22px;
     text-align: left;
   }
-  .parameter-product{
-    width:117px;
+
+  .parameter-product {
+    width: 117px;
     height: 48px;
     gap: 0px;
     opacity: 0px;
   }
-  .product-2000{
+
+  .product-2000 {
     width: 88px;
     height: 32px;
     gap: 0px;
@@ -625,7 +628,8 @@
     line-height: 32.4px;
     text-align: left;
   }
-  .product{
+
+  .product {
     width: 117px;
     height: 22px;
     gap: 0px;
@@ -637,13 +641,15 @@
     text-align: left;
 
   }
-  .parameter-customers{
+
+  .parameter-customers {
     width: 103px;
     height: 48px;
     gap: 0px;
     opacity: 0px;
   }
-  .customer-30{
+
+  .customer-30 {
     width: 103px;
     height: 32px;
     gap: 0px;
@@ -654,7 +660,8 @@
     line-height: 32.4px;
     text-align: left;
   }
-  .customer{
+
+  .customer {
     width: 95px;
     height: 22px;
     gap: 0px;
@@ -666,23 +673,28 @@
     text-align: left;
 
   }
-  .title-parameter-2{
+
+  .title-parameter-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .image-2{
+
+  .image-2 {
     margin-top: 0px;
     display: flex;
   }
-  .brands-5{
+
+  .brands-5 {
     display: none;
   }
-  .title-brand{
+
+  .title-brand {
     width: 100%;
     height: 146px;
   }
-  .brands-5-2{
+
+  .brands-5-2 {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -691,14 +703,16 @@
     align-items: center;
 
   }
-  .three-img{
+
+  .three-img {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
   }
-  .two-img{
+
+  .two-img {
     width: 80%;
     display: flex;
     justify-content: space-between;
