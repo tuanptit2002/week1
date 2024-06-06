@@ -24,7 +24,7 @@ export default {
 props:['cmt']
 }
 </script>
-<style>
+<style scoped>
 .cmt-rating{
   width: 150px;
   height: 22.58px;

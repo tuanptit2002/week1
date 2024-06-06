@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .product-price{
   width: 55px;
   height: 32px;
