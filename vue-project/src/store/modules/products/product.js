@@ -77,7 +77,14 @@ export const useProductStore  = defineStore({
             }catch (e){
                 console.error('Failed to fetch products:', e);
             }
-        }
+        },
+        async login() {
+            try{
+                window.location.href = 'http://localhost:3000/auth/google';
+            }catch (e){
+                console.error('Failed to fetch products:', e);
+            }
+        },
     },
     getters:{
         getAllProducts(){

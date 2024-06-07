@@ -29,7 +29,7 @@
       <div class="user">
         <div class="user-search"><img src="../../assets/search2.png"></div>
         <RouterLink to="/cart"><img src="../../assets/cart.png"></RouterLink>
-        <button><img src="../../assets/user.png"></button>
+        <RouterLink to="/login"><img src="../../assets/user.png"></RouterLink>
       </div>
     </div>
   </div>
