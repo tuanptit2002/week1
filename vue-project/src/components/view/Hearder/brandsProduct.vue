@@ -264,4 +264,251 @@
 .image-2{
   display: none;
 }
+@media (max-width: 46.178em) {
+  .sign div {
+    margin-top: 9px;
+    font-family: 'Satoshi';
+    font-size: 12px;
+    line-height: 16.2px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+  }
+
+
+
+
+
+  .title {
+    width: 100%;
+    height: 853px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #F2F0F1;
+    background-image: none;
+  }
+
+  .title-start {
+    width: 323px;
+    height: 93px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+
+  .title-find {
+    margin-top: 40px;
+    width: 323px;
+    height: 93px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Integral CF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    color: black;
+    box-sizing: border-box;
+    margin-left: 8px;
+  }
+  .title-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .star-big {
+    display: none;
+  }
+
+  .star-small {
+    width: 366px;
+    height: 50px;
+    margin-top: 30px;
+    left: 16px;
+    gap: 0px;
+  }
+
+  .title-browse {
+    margin-top: 25px;
+    margin-left: 8px;
+    width: 100%;
+    height: 100%;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #00000099;
+  }
+
+  .small {
+    display: none;
+  }
+
+
+  .title-button button {
+    margin-top: 60px;
+    width: 358px;
+    height: 52px;
+    gap: 12px;
+    border-radius: 62px;
+    opacity: 0px;
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+
+  .title-parameter {
+    display: none;
+  }
+
+  .brands-product {
+    display: flex;
+    justify-content: space-between;
+    width: 278px;
+    height: 52px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .parameter-brands {
+    width: 106px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .brands-200 {
+    width: 64px;
+    height: 32px;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+  }
+
+  .brand {
+    width: 106px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .parameter-product {
+    width: 117px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .product-2000 {
+    width: 88px;
+    height: 32px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+  }
+
+  .product {
+    width: 117px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+  }
+
+  .parameter-customers {
+    width: 103px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .customer-30 {
+    width: 103px;
+    height: 32px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+  }
+
+  .customer {
+    width: 95px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+  }
+
+  .title-parameter-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-2 {
+    margin-top: 0px;
+    display: flex;
+  }
+
+  .brands-5 {
+    display: none;
+  }
+
+  .title-brand {
+    width: 100%;
+    height: 146px;
+  }
+
+  .brands-5-2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    opacity: 0px;
+    align-items: center;
+
+  }
+
+  .three-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .two-img {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 </style>

@@ -28,13 +28,25 @@
 
       <div class="user">
         <div class="user-search"><img src="../../assets/search2.png"></div>
-        <RouterLink to="/cart"><img src="../../assets/cart.png"></RouterLink>
+        <RouterLink to="/cart"><img src="../../assets/cart.png"><div class="totalProduct">{{totalProduct}}</div></RouterLink>
         <RouterLink to="/login"><img src="../../assets/user.png"></RouterLink>
       </div>
     </div>
   </div>
 
 </template>
+
+<script>
+import {useCartStore} from "@/store/modules/carts/cart.js";
+export default {
+  computed: {
+    totalProduct() {
+      return useCartStore().getCountProduct;
+    }
+  }
+}
+</script>
+
 <style scoped>
 * {
   margin: 0;
@@ -199,68 +211,8 @@
   display: none;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 663px;
-  background-image: url("../../assets/backgroundheader.png");
-  background-size: cover;
-  background-repeat: no-repeat; /* Không lặp lại ảnh */
-  background-position: center;
-}
-
-.title-start {
-  width: 1240px;
-  display: flex;
-  justify-content: space-between;
 
 
-}
-
-.star-small {
-  width: 1240px;
-  display: flex;
-}
-
-.small {
-  margin-left: 106px;
-}
-
-.title-find {
-
-  margin-bottom: 33px;
-  width: 577px;
-  height: 173px;
-  font-family: Integral CF;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 64px;
-  text-align: left;
-  color: black;
-
-}
-
-.title-browse {
-  margin-bottom: 33px;
-  width: 545px;
-  height: 33px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  color: #00000099;
-}
-
-.title-button {
-  width: 1240px;
-  display: flex;
-}
 
 .title-button button {
   margin-bottom: 58px;
@@ -281,143 +233,22 @@
   line-height: 21.6px;
   text-align: left;
 }
-
-.title-parameter {
-
-  width: 1240px;
-  height: 74px;
-  gap: 32px;
-  opacity: 0px;
+a {
   display: flex;
+  text-decoration: none;
 }
-
-.parameter-brands {
-  width: 141px;
-  height: 74px;
-  gap: 0px;
-  opacity: 0px;
-}
-
-.parameter-product {
-  width: 156px;
-  height: 74px;
-  gap: 0px;
-  opacity: 0px;
-}
-
-.parameter-customers {
-  width: 171px;
-  height: 74px;
-  gap: 0px;
-  opacity: 0px;
-}
-
-.brands-200 {
-  width: 107px;
-  height: 54px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Satoshi;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 54px;
-  text-align: left;
-  color: black;
-}
-
-.brand {
-  width: 141px;
-  height: 22px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  color: #00000099;
-}
-
-.product-2000 {
-  width: 146px;
-  height: 54px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Satoshi;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 54px;
-  text-align: left;
-  color: black;
-}
-
-.product {
-  width: 156px;
-  height: 22px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  color: #00000099;
-}
-
-.customer-30 {
-  width: 171px;
-  height: 54px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Satoshi;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 54px;
-  text-align: left;
-  color: black;
-}
-
-.customer {
-  width: 126px;
-  height: 22px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  color: #00000099;
-
-}
-
-.title-brand {
-  width: 100%;
-  height: 122px;
-  background: black;
+.totalProduct{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 60%;
+  background-color: red;
+  width: 20px;
+  height: 18px;
+  color: #FFFFFF;
 }
-
-.brands-5 {
-  width: 1240px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.title-parameter-2 {
-  display: none;
-}
-
-.brands-5-2 {
-  display: none;
-}
-
-.image-2 {
-  display: none;
-}
-
 @media (max-width: 46.178em) {
   .f-1 {
     width: 100%;
@@ -720,5 +551,4 @@
   }
 }
 </style>
-<script setup>
-</script>
+

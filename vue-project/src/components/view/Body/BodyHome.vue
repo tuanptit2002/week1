@@ -2,9 +2,9 @@
   <div class="body">
     <brands-product></brands-product>
     <div class="title-new">NEW ARRIVALS</div>
-    <div class="products">
-      <button @click="()=>{setClickDetail()}" class="product" v-for="product in products">
-        <product :product = product></product>
+    <div class="products" >
+      <button @click="()=>{setClickDetail(product._id)}" class="product" v-for="product in dataProduct">
+        <product :product = 'product'></product>
       </button>
     </div>
     <div class="button-view"><button>View All</button></div>
@@ -13,7 +13,7 @@
 
     <div class="title-new">TOP SELLING</div>
     <div class="products">
-      <button @click="setClickDetail" class="product" v-for="product in products">
+      <button @click="setClickDetail" class="product" v-for="product in dataProduct">
         <product :product = product></product>
       </button>
     </div>
@@ -79,25 +79,21 @@
   margin-bottom: 62px;
 }
 .products{
+  scrollbar-width: none; /* Ẩn thanh cuộn theo chiều ngang và dọc */
+  -ms-overflow-style: none;
+}
+.products{
   width: 1240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x: scroll;
+
+}
+ .product{
+  margin-right: 20px;
 }
 
-
-.text-rating{
-  width: 33px;
-  height: 19px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Satoshi;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.9px;
-  text-align: left;
-  color: black;
-}
 
 .button-view{
   width: 218px;
@@ -232,7 +228,9 @@
   }
   .product{
     margin-left: 10px;
+
   }
+
   .product img{
     height: 200px;
   }
@@ -288,7 +286,7 @@
   }
 
   .comment{
-    height: 100%;
+    height: 1000%;
     width: 90%;
     display: flex;
     align-items: center;
@@ -306,9 +304,19 @@
 import Product from "@/components/layout/product.vue";
 import CommentProduct from "@/components/layout/commentProduct.vue";
 import BrandsProduct from "@/components/view/Hearder/brandsProduct.vue";
-
+import {useProductStore} from "@/store/modules/products/product.js";
 export  default {
   components: {BrandsProduct, CommentProduct, Product},
+  created() {
+    useProductStore().getProducts();
+
+  },
+  computed:{
+    dataProduct() {
+      let result = useProductStore().getAllProducts
+      return result;
+    },
+  },
 
   data(){
     return{
@@ -329,39 +337,14 @@ export  default {
           title: '"As someone who\'s always on the lookout for unique fashion pieces, I\'m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”'
         }
       ],
-      products:[
-        {
-          img:'../../../assets/shirt.png',
-          name:'T-SHIRT WITH TAPE DETAILS',
-          rating:4.5,
-          price:120
-        },
-        {
-          img:'../../../assets/shirt.png',
-          name:'T-SHIRT WITH TAPE DETAILS',
-          rating:3.5,
-          price:120
-        },
-        {
-          img:'../../../assets/shirt.png',
-          name:'T-SHIRT WITH TAPE DETAILS',
-          rating:4.5,
-          price:120
-        },
-        {
-          img:'../../../assets/shirt.png',
-          name:'T-SHIRT WITH TAPE DETAILS',
-          rating:4.5,
-          price:120
-        }
-      ]
+      products:[]
     }
   },
   methods: {
-    setClickDetail(){
-      console.log("oke")
+    setClickDetail(data){
+      console.log("id ne: ", data)
       this.$router.push('/detail').catch(err => {
-        console.error(err);
+
       });
     },
     setClickProduct(){

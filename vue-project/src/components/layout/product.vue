@@ -1,9 +1,10 @@
 <template>
 
-  <div><img src="../../assets/shirt.png" alt=""></div>
+  <div><img :src= product.image alt="" style="width: 295px; height: 298px"></div>
   <div class="product-name">{{product.name}}</div>
-  <div class="rating" >
+  <div class="rating">
     <v-rating
+
         v-model="product.rating"
         active-color="yellow-darken-2"
         :half-increments="true"

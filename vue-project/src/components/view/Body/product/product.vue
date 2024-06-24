@@ -46,17 +46,40 @@
         <button class="up"><img src="../../../../assets/add.png"></button>
       </div>
       <div class="btn-add">
-        <button class="add">Add to Cart</button>
+        <button class="add" @click="addProduct">Add to Cart</button>
       </div>
     </div>
     
   </div>
 </template>
 <script>
+import {useCartStore} from "@/store/modules/carts/cart.js";
+import Swal from "sweetalert2";
 export default {
   data: () => ({
     rating: 4.5,
   }),
+  methods:{
+    addProduct(){
+      const product = {
+        img: '../../../assets/shirt-1.png',
+            name: 'Gradient Graphic T-shirt',
+          size: 'Large',
+          color: 'red',
+          price: 158
+      }
+      useCartStore().addProduct(product).then(() => {
+        console.log(("oke vao roi"))
+        Swal.fire({
+          title: "Thêm vào giỏ hàng thành công!",
+          text: "You clicked the button!",
+          icon: "success"
+        });
+      });
+
+
+    }
+  }
 }
 </script>
 <style scoped>

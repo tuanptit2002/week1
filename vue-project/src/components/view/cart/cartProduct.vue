@@ -17,42 +17,13 @@
 <script>
 import Order from "@/components/view/cart/order.vue";
 import Products from "@/components/view/cart/products.vue";
-
+import {useCartStore} from "@/store/modules/carts/cart.js";
 export default  {
   components: {Products, Order},
 
   data(){
     return{
-      products:[
-          {
-            img: '../../../assets/shirt-1.png',
-            name: 'Gradient Graphic T-shirt',
-            size: 'Large',
-            color: 'red',
-            price: 156
-          },
-        {
-          img: '../../../assets/shirt-1.png',
-          name: 'Gradient Graphic T-shirt',
-          size: 'Large',
-          color: 'red',
-          price: 156
-        },
-        {
-          img: '../../../assets/shirt-1.png',
-          name: 'Gradient Graphic T-shirt',
-          size: 'Large',
-          color: 'red',
-          price: 156
-        },
-        {
-          img: '../../../assets/shirt-1.png',
-          name: 'Gradient Graphic T-shirt',
-          size: 'Large',
-          color: 'red',
-          price: 156
-        }
-      ]
+      products:useCartStore().getAllProductInCart
     }
   }
 }
